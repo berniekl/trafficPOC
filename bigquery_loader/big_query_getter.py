@@ -5,7 +5,7 @@ from collections import defaultdict
 import logging
 import json
 
-BUCKET_NAME = 'bhk-trafficv3'
+BUCKET_NAME = 'bhktrafficv4'
 
 
 class BigQueryGetter(object):
@@ -59,7 +59,7 @@ class BigQueryGetter(object):
         start_lon,
         _lit_lat,
         _lit_lon
-      FROM `bhk-trafficv3.demos.segments`
+      FROM `bhktrafficv4.demos.segments`
       ORDER BY
         _last_updt desc
       LIMIT 824
